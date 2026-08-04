@@ -11,6 +11,14 @@ saldo em tempo real, interface desktop.
 import tkinter as tk
 from tkinter import messagebox
 
+COLOR_AZUL_ESC = "#004d6e"  # AE (Fundo da tela)
+COLOR_AZUL_MED = "#0081ab"  # AM (Bordas e detalhes)
+COLOR_AZUL_CLA = "#00b1cd"  # AC (Destaque do texto da senha)
+COLOR_VERDE    = "#a6c844"  # V  (Botão Principal / Gerar)
+COLOR_ROSA     = "#b83764"  # R  (Acentos e alertas de erro)
+COLOR_AMARELO  = "#edce01"  # A  (Botão Copiar / Destaque)
+COLOR_ACO      = "#4a3336"  # B  (Fundo dos campos e cards)
+
 # 1. Variável Global para controlar o saldo
 saldo = 0.0
 
@@ -59,7 +67,7 @@ janela.geometry("380x300")
 
 # 4. Componentes da Interface (Visor de Saldo e Campo de Entrada)
 lbl_saldo = tk.Label(
-    janela, text="Saldo Atual: R$ 0.00", font=("Arial", 14, "bold"), fg="#008052"
+    janela, text="Saldo Atual: R$ 0.00", font=("Cooper black", 16, "bold"), fg=COLOR_ACO
 )
 lbl_saldo.pack(pady=20)
 
@@ -76,7 +84,7 @@ btn_frame.pack(pady=15)
 btn_depositar = tk.Button(
     btn_frame,
     text="Depositar (+)",
-    bg="#008052",
+    bg=COLOR_AZUL_CLA,
     fg="white",
     width=12,
     command=depositar,
@@ -84,7 +92,7 @@ btn_depositar = tk.Button(
 btn_depositar.grid(row=0, column=0, padx=5)
 
 btn_sacar = tk.Button(
-    btn_frame, text="Sacar (-)", bg="#c8102e", fg="white", width=12, command=sacar
+    btn_frame, text="Sacar (-)", bg=COLOR_ROSA, fg="white", width=12, command=sacar
 )
 btn_sacar.grid(row=0, column=1, padx=5)
 
