@@ -20,6 +20,13 @@ from tkinter import messagebox
 import requests
 from PIL import Image, ImageTk
 
+COLOR_AZUL_ESC = "#004d6e"  # AE (Fundo da tela)
+COLOR_AZUL_MED = "#0081ab"  # AM (Bordas e detalhes)
+COLOR_AZUL_CLA = "#00b1cd"  # AC (Destaque do texto da senha)
+COLOR_VERDE    = "#a6c844"  # V  (Botão Principal / Gerar)
+COLOR_ROSA     = "#b83764"  # R  (Acentos e alertas de erro)
+COLOR_AMARELO  = "#edce01"  # A  (Botão Copiar / Destaque)
+COLOR_ACO      = "#4a3336"  # B  (Fundo dos campos e cards)
 
 # 1. Função que exibe a mensagem do evento
 def mostrar_fato(detalhe):
@@ -32,15 +39,15 @@ janela = tk.Tk()
 janela.title("História Financeira: Eufrásia Teixeira Leite")
 # janela.geometry("500x580")  # Ajustado o tamanho da tela
 janela.geometry("500x580")  # Ajustado o tamanho da tela
-janela.configure(bg="#f4f4f9")
+janela.configure(bg=COLOR_AZUL_MED)
 
 # 3. Título e Subtítulo
 lbl_titulo = tk.Label(
     janela,
     text="Eufrásia Teixeira Leite",
     font=("Times New Roman", 26, "bold"),
-    bg="#f4f4f9",
-    fg="#1b365d",
+    bg=COLOR_AZUL_MED,
+    fg=COLOR_ACO,
 )
 lbl_titulo.pack(pady=7)
 # lbl_titulo.pack(pady=120)
@@ -49,7 +56,7 @@ lbl_subtitulo = tk.Label(
     janela,
     text="A primeira investidora global do Brasil",
     font=("Arial", 10, "italic"),
-    bg="#f4f4f9",
+    bg=COLOR_AZUL_MED,
 )
 lbl_subtitulo.pack(pady=2)
 
@@ -102,7 +109,7 @@ eventos = {
     "1872 - Herança & Europa": "Após perder os pais, mudou-se para Paris e assumiu a gestão da fortuna da família.",
     "1873-1930 - Carteira Global": "Investiu em títulos, ações e ferrovias em 13 países e 7 moedas diferentes.",
     "1930 - Legado": "Faleceu deixando sua fortuna para causas sociais e educacionais no Brasil.",
-    # herança, relacionamento.
+    # CURIOSIDADE, HERANÇA DE EUFRASIA PARA MULHERES.
 }
 
 # 6. Criação dos Botões
