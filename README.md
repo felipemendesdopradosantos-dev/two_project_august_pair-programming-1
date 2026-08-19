@@ -1,98 +1,65 @@
-# 🐍 Projetos Educacionais em Python - Finanças e História
+🏦 Banco Digital — Python
 
-Este repositório contém uma coleção de aplicações gráficas desenvolvidas em **Python** utilizando **Tkinter**. Os projetos foram elaborados com foco didático para alunos do programa **Jovem Aprendiz**, integrando conceitos de **programação procedural**, **educação financeira** e **história do Brasil**.
+Este projeto é um banco digital desenvolvido em Python, criado com objetivo educacional para praticar programação e criar uma aplicação com interface gráfica.
 
----
+A ideia é simular algumas funções básicas de um banco de forma simples e fácil de usar.
 
-## 🎯 Objetivos Didáticos
+🎯 Objetivo do Projeto
 
-* **Lógica Procedural:** Estruturação de código sem o uso de Orientação a Objetos (POO), facilitando a assimilação inicial de funções, parâmetros e escopo global (`global`).
-* **Interface Gráfica (GUI):** Construção de telas interativas com `tkinter` e componentes modernos (`ttk.Notebook`, `Listbox`, `Frame`, etc.).
-* **Tratamento de Exceções:** Uso de blocos `try/except` para validação de entradas numéricas do usuário.
-* **Consumo de Requisições HTTP:** Integração com a web (`requests`) e manipulação de imagens (`Pillow`).
+O projeto foi desenvolvido para colocar em prática conceitos de programação, como:
 
----
+- Funções em Python
+- Variáveis e operações
+- Entrada e saída de dados
+- Estruturas condicionais
+- Validação de informações
+- Tratamento de erros
+- Interface gráfica com Tkinter
+- Atualização de informações na tela
 
-## 🚀 Projetos Incluídos
+💰 Funcionalidades
 
-### 1. 📜 Linha do Tempo: Eufrásia Teixeira Leite (`historia_financas_with_eufrasia_seunome.py`)
-Uma interface interativa sobre **Eufrásia Teixeira Leite** (1850–1930), a primeira investidora global do Brasil.
-* **Destaques:** 
-  * Download e exibição de imagem via requisição HTTP (`requests` e `Pillow`).
-  * Tratamento de falhas de conexão para manter a aplicação funcional mesmo offline.
-  * Botões interativos para exibição de fatos históricos.
+O banco possui funções para:
 
----
+- 💵 Consultar o saldo
+- ➕ Realizar depósitos
+- ➖ Realizar saques
+- 📋 Visualizar o extrato
+- ⚠️ Verificar valores inválidos
+- 🚫 Impedir saque maior que o saldo disponível
+- 🖥️ Utilizar uma interface gráfica para facilitar a interação
 
-### 2. 💵 Simulador de Aportes (`financas_aportes_bankb3_seunome.py`)
-Uma calculadora de fluxo de caixa simplificada para ensinar operações de depósito e saque.
-* **Destaques:**
-  * Controle de saldo em tempo real.
-  * Validação para impedir saques maiores do que o saldo disponível.
-  * Atualização dinâmica dos rótulos e campos de texto.
+🖥️ Tecnologias utilizadas
 
----
+- Python
+- Tkinter
 
-### 3. 📊 Dashboard Financeiro - Padrão B3 (`financas_dashboard_bankb3_seunome.py`)
-Um painel completo simulando o ambiente da Bolsa de Valores brasileira (B3).
-* **Destaques:**
-  * Uso de abas interativas (`ttk.Notebook`) para navegar entre **Conta Corrente**, **Criptoativos** e **Extrato**.
-  * Simulação de compra de frações de Bitcoin (BTC).
-  * Histórico de transações em tempo real utilizando `tk.Listbox`.
+O Tkinter foi utilizado para criar a interface gráfica do banco.
 
----
+🚀 Como executar
 
-## 🛠️ Pré-requisitos e Instalação
+É necessário ter o Python 3 instalado no computador.
 
-Para executar os projetos, você precisará do **Python 3.10+** instalado em sua máquina.
+Depois, abra a pasta do projeto pelo terminal e execute:
 
-### 1. Instalar as dependências do projeto
-Abra o terminal ou prompt de comando e execute:
+python nome_do_arquivo.py
 
-```bash
-pip install requests pillow
+Substitua "nome_do_arquivo.py" pelo nome do arquivo principal do projeto.
 
-```
-```bash
-python -m pip install requests pillow
+📂 Estrutura do projeto
 
-```
-
-
-> **Nota:** O `tkinter` já vem instalado por padrão na maioria das instalações do Python para Windows/macOS. Caso esteja utilizando Linux (Ubuntu/Debian), instale-o via terminal:
-> `sudo apt-get install python3-tkinter`
-
----
-
-## 💻 Como Executar as Aplicações
-
-Navegue até a pasta do projeto no seu terminal e rode o arquivo desejado:
-
-```bash
-# Executar a Linha do Tempo de Eufrásia
-python historia_financas_with_eufrasia_seunome.py
-
-# Executar o Simulador de Aportes
-python financas_aportes_bankb3_seunome.py
-
-# Executar o Dashboard B3
-python financas_dashboard_bankb3_seunome.py
-
-```
-
----
-
-## 🗂️ Estrutura do Repositório
-
-```text
 .
-├── historia_financas_with_eufrasia_seunome.py    # Aplicação sobre Eufrásia Teixeira Leite
-├── financas_aportes_bankb3_seunome.py    # Simulador simples de depósitos e saques
-├── financas_dashboard_bankb3_seunome.py         # Dashboard financeiro com abas (B3)
-└── README.md               # Documentação do projeto
+├── arquivo_principal.py
+└── README.md
 
-```
+📚 O que foi aprendido
 
----
+Durante o desenvolvimento do projeto, foram praticados conceitos importantes de programação, principalmente a criação de funções, utilização de variáveis, condições, validações e criação de uma interface gráfica.
 
-💙 *Projeto desenvolvido para fins educacionais e de capacitação profissional.*
+O projeto também ajudou a entender melhor como transformar um código em uma aplicação que pode ser utilizada por uma pessoa.
+
+👨‍💻 Desenvolvedor
+
+Felipe Mendes do Prado Santos
+
+Projeto desenvolvido para fins educacionais e de capacitação profissional.
